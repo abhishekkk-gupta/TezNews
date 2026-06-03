@@ -26,7 +26,7 @@ body {
     max-width: 450px;        
     border-radius: 12px;      
     box-sizing: border-box;
-    height: 470px;
+    height: 480px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -67,4 +67,10 @@ body {
 
 #login-btn:hover {
   background-color: #059891;
+}
+
+#error-msg{
+     color:red;
+     display:none;
+     font-size:0.75rem;
 }

@@ -14,11 +14,28 @@
     <div class="login-card">
         <img src="logo.png" alt="TezTecch News Logo" id="logo">
         <h3>Admin Log In</h3>
-        <form id="login-form" action="https://teztecch.com">
+        <form id="login-form" action="">
             <input type="text" id="email" name="email" placeholder="Admin Username" required><br><br>
-            <input type="password" name="pswd" id="pswd" placeholder="Password" required><br>            
-            <button id="login-btn">Log In</button><br>
+            <input type="password" name="pswd" id="pswd" placeholder="Password" required><br>
+            <p id="error-msg">Invalid username or password</p>
+            <button id="login-btn" type="submit">Log In</button><br>
         </form>
     </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("pswd").value;
+
+            if (username === "admin1" && password === "pass@123") {
+                window.location.href = "admin-dashboard.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+                document.getElementById("error-msg").style.display = "block";
+            }
+        });
+    </script>
 </body>
 </html>
