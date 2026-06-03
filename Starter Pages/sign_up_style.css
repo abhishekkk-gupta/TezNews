@@ -1,0 +1,237 @@
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  margin: 0;               
+  background-color: #0a5a47; 
+}
+
+#logo {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup-card {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;              
+    max-width: 450px;        
+    border-radius: 12px;      
+    box-sizing: border-box;
+    height: 600px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-card h3 {
+  margin: 0 0 20px 0;       
+  font-size: 24px;
+  text-align: center;
+}
+
+#signup-form input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#signup-btn {
+  width: 150px;
+  padding: 12px;
+  background-color: #0a5a47; 
+  color: white;
+  border: 1px white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+#signup-btn:hover {
+  background-color: #0caca4;
+}
+
+/* Log In Style */
+.login-card {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;              
+    max-width: 450px;        
+    border-radius: 12px;      
+    box-sizing: border-box;
+    height: 550px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-card h3 {
+  margin: 0 0 20px 0;       
+  font-size: 24px;
+  text-align: center;
+}
+
+#login-form input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#login-btn {
+  width: 150px;
+  padding: 12px;
+  background-color: #0a5a47; 
+  color: white;
+  border: 1px white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+#login-btn:hover {
+  background-color: #059891;
+}
+
+/*Forgot Password Style*/
+.fpswd-card {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;              
+    max-width: 450px;        
+    border-radius: 12px;      
+    box-sizing: border-box;
+    height: 520px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#fpswd-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fpswd-card h3 {
+  margin: 0 0 20px 0;       
+  font-size: 24px;
+  text-align: center;
+}
+
+#fpswd-form input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#fpswd-btn {
+  width: 150px;
+  padding: 12px;
+  background-color: #0a5a47; 
+  color: white;
+  border: 1px white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+#fpswd-btn:hover {
+  background-color: #0aaea6;
+}
+
+/*Forgot Password 2*/
+.fpswd2-card {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;              
+    max-width: 450px;        
+    border-radius: 12px;      
+    box-sizing: border-box;
+    height: 490px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#fpswd2-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fpswd2-card h3 {
+  margin: 0 0 20px 0;       
+  font-size: 24px;
+  text-align: center;
+}
+
+#fpswd2-form input {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#fpswd2-btn {
+  width: 150px;
+  padding: 12px;
+  background-color: #0a5a47; 
+  color: white;
+  border: 1px white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+#fpswd2-btn:hover {
+  background-color: #089e96;
+}
