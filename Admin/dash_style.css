@@ -162,7 +162,7 @@ nav {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 thead tr {
@@ -358,8 +358,8 @@ tbody tr:hover {
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
-  color: #c2185b;
-  border: 1px solid #c2185b;
+  color: red;
+  border: 1px solid red;
   flex: 1;
   text-align: center
 }
@@ -368,7 +368,7 @@ tbody tr:hover {
 .btn-edit:hover     { background-color: #e67e00; color: white; }
 .btn-publish:hover  { background-color: #2e7d32; color: white; }
 .btn-unpublish:hover{ background-color: #2e7d32; color: white; }
-.btn-delete:hover   { background-color: #c2185b; color: white; }
+.btn-delete:hover   { background-color: red; color: white; }
 
 /*All Users Page Styling*/
 /* Filter bar */
@@ -443,12 +443,12 @@ tbody tr:hover {
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
-  border: 1px solid #c2185b;
-  color: #c2185b;
+  border: 1px solid red;
+  color: red;
 }
 
 .btn-view:hover   { background-color: #3b6fd4; color: white; }
-.btn-delete:hover { background-color: #c2185b; color: white; }
+.btn-delete:hover { background-color: red; color: white; }
 
 /* Footer */
 footer {
