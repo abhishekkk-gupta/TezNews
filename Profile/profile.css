@@ -105,18 +105,21 @@ nav {
 /* Button */
 .btn {
   display: inline-block;
-  background-color: #0a5a47;
-  color: white;
+  background-color: #ffff;
+  color: #0a5a47;
   padding: 9px 22px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.85rem;
   margin-top: -30px;
   float: right;
+  border: 2px solid #0a5a47;
 }
 
 .btn:hover {
-  background-color: #015c58;
+  background-color: #0a5a47;
+  color: #ffff;
+
 }
 
 /* Topic tags */
@@ -206,8 +209,9 @@ nav {
 
 .r-btn {
   display: inline-block;
-  background-color: #0a5a47;
-  color: white;
+  background-color: #ffff;
+  color: #0a5a47;
+  border: 2px solid #0a5a47;
   padding: 9px 22px;
   margin-right: 15px;
   border-radius: 5px;
@@ -218,7 +222,8 @@ nav {
 }
 
 .r-btn:hover {
-  background-color: #117b7e;
+  background-color: #0a5a47;
+  color: #ffff;
 }
 
 

@@ -124,7 +124,7 @@ nav {
 }
 
 .card-btn:hover {
-  background-color: #084033;
+  background-color: #0a5a47;
   color: #ffffff
 }
 
@@ -204,7 +204,7 @@ tbody tr:hover {
 
 .table-btn:hover {
   color: white;
-  background-color: #084033;
+  background-color: #0a5a47;
 }
 
 /*Table Heading and link*/
@@ -278,7 +278,7 @@ tbody tr:hover {
 }
 
 #add-btn:hover {
-  background-color: #084033;
+  background-color: #0a5a47;
   color: white
 }
 
