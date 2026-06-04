@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles - TezNews Admin</title>
+    <link rel="icon" type="image/png" href="images/logo_wbg.jpg">
+    <link rel="stylesheet" href="dash_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img id="logo" src="images/logo_wbg.jpg" alt="TezNews Logo">
+    <div id="nav-links">
+      <a href="admin-dashboard.html">HOME</a>
+      <a href="all_articles.html" id="active-link">ARTICLES</a>
+      <a href="all_users.html">ALL USERS</a>
+      <a href="comments.html">COMMENTS</a>
+      <a href="categories.html">CATEGORIES</a>
+      <a href="admin.html">LOG OUT</a>
+    </div>
+  </nav>
+
+  <div id="main">
+
+    <!-- Page heading -->
+    <div class="section-box">
+      <h2>All Articles 📰</h2>
+      <p class="section-desc">Manage all articles published on TezTecch News</p>
+    </div>
+
+    <!-- Filter bar -->
+    <div id="filter-bar">
+      <div id="filter-left">
+        <input type="text" placeholder="Search articles" id="search-input">
+
+        <label for="cat-filter">Category:</label>
+        <select id="cat-filter">
+          <option>All</option>
+          <option>Politics</option>
+          <option>Technology</option>
+          <option>Business</option>
+          <option>Economy</option>
+          <option>Sports</option>
+          <option>Health</option>
+          <option>World</option>
+        </select>
+
+        <label for="status-filter">Status:</label>
+        <select id="status-filter">
+          <option>All</option>
+          <option>Published</option>
+          <option>Unpublished</option>
+        </select>
+      </div>
+
+      <a href="#" id="add-btn">+ Add New Article</a>
+    </div>
+
+    <!-- Articles table -->
+    <div class="table-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Article Title</th>
+            <th>Category</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>1.</td>
+            <td>India GDP grows 7.2% in Q4, beats expectations</td>
+            <td><span class="tag tag-economy">Economy</span></td>
+            <td>Abhishek Gupta</td>
+            <td>1 June 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2.</td>
+            <td>Government announces new AI policy for 2026</td>
+            <td><span class="tag tag-tech">Technology</span></td>
+            <td>Abhijit Munghate</td>
+            <td>1 June 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3.</td>
+            <td>Budget 2026: What it means for the middle class</td>
+            <td><span class="tag tag-business">Business</span></td>
+            <td>Aahan B. Sultan</td>
+            <td>31 May 2026</td>
+            <td><span class="status unpublished">Unpublished</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-publish">Publish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>4.</td>
+            <td>Supreme Court verdict on electoral bonds explained</td>
+            <td><span class="tag tag-politics">Politics</span></td>
+            <td>Sunny Jadhav</td>
+            <td>31 May 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>5.</td>
+            <td>India vs Australia: Series decider preview</td>
+            <td><span class="tag tag-sports">Sports</span></td>
+            <td>Abhijit Munghate</td>
+            <td>30 May 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>6.</td>
+            <td>Top 10 startups to watch in India this year</td>
+            <td><span class="tag tag-tech">Technology</span></td>
+            <td>Rutuja Tayade</td>
+            <td>30 May 2026</td>
+            <td><span class="status unpublished">Unpublished</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-publish">Publish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>7.</td>
+            <td>New health insurance rules effective from June 2026</td>
+            <td><span class="tag tag-health">Health</span></td>
+            <td>Sunny Jadhav</td>
+            <td>29 May 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>8.</td>
+            <td>UN climate report warns of record temperatures in Asia</td>
+            <td><span class="tag tag-world">World</span></td>
+            <td>Abhishek Gupta</td>
+            <td>28 May 2026</td>
+            <td><span class="status published">Published</span></td>
+            <td class="action-btns">
+              <a href="#" class="btn-view">View</a>
+              <a href="#" class="btn-edit">Edit</a>
+              <a href="#" class="btn-unpublish">Unpublish</a>
+              <a href="#" class="btn-delete">Delete</a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 TezTecch News. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
