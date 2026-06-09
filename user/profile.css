@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 nav {
-  background-color: #25aa99;
+  background-color: #0a5a47;
   padding: 14px 24px;
   display: flex;
   justify-content: space-between;
@@ -69,8 +69,8 @@ nav {
 .section-box h2 {
   font-size: 1.3rem;
   margin-bottom: 6px;
-  color: #25aa99;
-  border-left: 4px solid #25aa99;
+  color: #0a5a47;
+  border-left: 4px solid #0a5a47;
   padding-left: 10px;
 }
 
@@ -100,7 +100,7 @@ nav {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #25aa99;
+  border: 3px solid #0a5a47;
 }
 
 #profile-info p {
@@ -113,18 +113,18 @@ nav {
 .btn {
   display: inline-block;
   background-color: #ffff;
-  color: #25aa99;
+  color: #0a5a47;
   padding: 9px 22px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.85rem;
   margin-top: -30px;
   float: right;
-  border: 2px solid #25aa99;
+  border: 2px solid #0a5a47;
 }
 
 .btn:hover {
-  background-color: #25aa99;
+  background-color: #0a5a47;
   color: #ffff;
 
 }
@@ -157,9 +157,9 @@ nav {
 }
 
 .active-topic {
-  background-color: #25aa99;
+  background-color: #0a5a47;
   color: white;
-  border-color: #25aa99;
+  border-color: #0a5a47;
 }
 
 /* Article row */
@@ -186,7 +186,7 @@ nav {
   height: 155px;
   object-fit: cover;
   border-radius: 4px;
-  border: 2px solid #25aa99;
+  border: 2px solid #0a5a47;
   background-color: #dddddd;
 }
 
@@ -217,8 +217,8 @@ nav {
 .r-btn {
   display: inline-block;
   background-color: #ffff;
-  color: #25aa99;
-  border: 2px solid #25aa99;
+  color: #0a5a47;
+  border: 2px solid #0a5a47;
   padding: 9px 22px;
   margin-right: 15px;
   border-radius: 5px;
@@ -229,7 +229,7 @@ nav {
 }
 
 .r-btn:hover {
-  background-color: #25aa99;
+  background-color: #0a5a47;
   color: #ffff;
 }
 
@@ -245,7 +245,7 @@ nav {
 /* Plan card */
 .plan-card {
   background-color: white;
-  border: 2px double #25aa99;
+  border: 2px double #0a5a47;
   border-radius: 8px;
   padding: 28px 24px;
   flex: 1;
@@ -263,7 +263,7 @@ nav {
   font-size: 1.9rem;
   font-weight: bold;
   margin-bottom: 6px;
-  color: #25aa99;
+  color: #0a5a47;
 }
 
 .plan-price span {
@@ -305,8 +305,8 @@ nav {
   display: block;
   text-align: center;
   background-color: #ffffff;
-  color: #25aa99;
-  border: 2px solid #25aa99;
+  color: #0a5a47;
+  border: 2px solid #0a5a47;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -315,18 +315,18 @@ nav {
 }
 
 .plan-btn:hover {
-  background-color: #25aa99;
+  background-color: #0a5a47;
   color: #ffffff;
 }
 
 /* Note box */
 #note-box {
   background-color: #e0f7f4;
-  border: 1px solid #25aa99;
+  border: 1px solid #0a5a47;
   border-radius: 6px;
   padding: 12px 16px;
   font-size: 0.82rem;
-  color: #25aa99;
+  color: #0a5a47;
   margin-bottom: 32px;
 }
 
@@ -335,7 +335,7 @@ nav {
   font-size: 1.1rem;
   color: #222222;
   margin-bottom: 16px;
-  border-left: 4px solid #25aa99;
+  border-left: 4px solid #0a5a47;
   padding-left: 10px;
 }
 
@@ -361,12 +361,55 @@ nav {
 }
 
 /* Footer */
-footer {
-  background-color: #25aa99;
+/* footer {
+  background-color: #0a5a47;
   text-align: center;
   padding: 10px;
   color: white;
   font-size: 0.82rem;
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
+} */
+
+footer{
+    background-color: #0a5a47;
+    color: #ffffff;
+    margin-top: 80px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.footer-column{
+    display: flex;
+    /* border: #00C853 1px solid; */
+    padding-left: 80px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-column h3{
+    margin-bottom: 15px;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.footer-column a:hover{
+    transform: translateX(5px);
+    color: #ffffff;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: 25px;
+    color: #ffffff;
 }
