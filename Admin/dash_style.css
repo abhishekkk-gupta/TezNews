@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 nav {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   padding: 14px 24px;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ nav {
 
 /* Main */
 #main {
-  max-width: 1500px;
+  max-width: 1400px;
   margin-top: 100px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -81,12 +81,12 @@ nav {
 
 .section-box h2 {
   font-size: 1.5rem;
-  color: #0a5a47;
+  color: #25aa99;
   margin-bottom: 4px;
 }
 
 .section-box h4 {
-  color: #0a5a47;
+  color: #25aa99;
 }
 
 .section-desc {
@@ -104,7 +104,7 @@ nav {
 
 .stat-card {
   background-color: white;
-  border: 1px solid #dddddd;
+  border: 1px solid #25aa99;
   border-radius: 6px;
   padding: 20px;
   flex: 1;
@@ -121,24 +121,24 @@ nav {
 .card-number {
   font-size: 2rem;
   font-weight: bold;
-  color: #0a5a47;
+  color: #25aa99;
   margin-bottom: 16px;
 }
 
 .card-btn {
   display: inline-block;
   background-color: #ffffff;
-  color: #0a5a47;
+  color: #25aa99;
   padding: 7px 16px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.78rem;
   font-weight: 550;
-  border: 2px solid #0a5a47;
+  border: 1px solid #25aa99;
 }
 
 .card-btn:hover {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   color: #ffffff
 }
 
@@ -160,12 +160,12 @@ nav {
 
 .table-heading h3 {
   font-size: 1rem;
-  color: #0a5a47;
+  color: #25aa99;
 }
 
 .table-heading a {
   font-size: 0.8rem;
-  color: #0a5a47;
+  color: #25aa99;
   text-decoration: none;
 }
 
@@ -208,17 +208,18 @@ tbody tr:hover {
 /* Table button */
 .table-btn {
   background-color: #f5f5f5;
-  color: #0a5a47;
+  color: #25aa99;
   padding: 4px 12px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.78rem;
-  border: 1px solid #0a5a47
+  border: 1px solid #25aa99;
+  width: 250px;
 }
 
 .table-btn:hover {
   color: white;
-  background-color: #0a5a47;
+  background-color: #25aa99;
 }
 
 /*Table Heading and link*/
@@ -230,7 +231,7 @@ tbody tr:hover {
 }
 
 #article-header a{
-    color: #0a5a47;
+    color: #25aa99;
     font-size: 0.85rem;
 }
 
@@ -282,17 +283,17 @@ tbody tr:hover {
 
 #add-btn {
   background-color: white;
-  color: #0a5a47;
+  color: #25aa99;
   padding: 8px 16px;
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: bold;
-  border: 2px solid #0a5a47;
+  border: 2px solid #25aa99;
 }
 
 #add-btn:hover {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   color: white
 }
 
@@ -307,7 +308,7 @@ tbody tr:hover {
 }
 
 .unpublished {
-  color: #e60000;
+  color: #e67e00;
 }
 
 /* Action buttons */
@@ -316,6 +317,7 @@ tbody tr:hover {
   gap: 6px;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 420px;
 }
 
 .btn-view {
@@ -328,18 +330,20 @@ tbody tr:hover {
   border: 1px solid #3b6fd4;
   flex: 1;
   text-align: center;
+  display: inline-block;
 }
 
-.btn-edit {
+.edit {
   padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
-  color: #e67e00;
-  border: 1px solid #e67e00;
+  color: #4ebad9;
+  border: 1px solid #4ebad9;
   flex: 1;
-  text-align: center
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-publish {
@@ -351,7 +355,8 @@ tbody tr:hover {
   color: #2e7d32;
   border: 1px solid #2e7d32;
   flex: 1;
-  text-align: center
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-unpublish {
@@ -360,10 +365,11 @@ tbody tr:hover {
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
-  color: #2e7d32;
-  border: 1px solid #2e7d32;
+  color: #e67e00;
+  border: 1px solid #e67e00;
   flex: 1;
-  text-align: center
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-delete {
@@ -375,13 +381,14 @@ tbody tr:hover {
   color: red;
   border: 1px solid red;
   flex: 1;
-  text-align: center
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-view:hover     { background-color: #3b6fd4; color: white; }
-.btn-edit:hover     { background-color: #e67e00; color: white; }
+.edit:hover     { background-color: #4ebad9; color: white; }
 .btn-publish:hover  { background-color: #2e7d32; color: white; }
-.btn-unpublish:hover{ background-color: #2e7d32; color: white; }
+.btn-unpublish:hover{ background-color: #e67e00; color: white; }
 .btn-delete:hover   { background-color: red; color: white; }
 
 /*All Users Page Styling*/
@@ -436,9 +443,10 @@ tbody tr:hover {
 }
 
 /* Action buttons */
-.action-btns {
+.user-action-btns {
   display: flex;
   gap: 8px;
+  width: 200px;
 }
 
 .btn-view {
@@ -486,7 +494,7 @@ tbody tr:hover {
 .cstat-num {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #0a5a47;
+  color: #25aa99;
   margin-bottom: 4px;
 }
 
@@ -570,58 +578,59 @@ tbody tr:hover {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  width: 350px;
 }
 
 .btn-view {
-  padding: 4px 15px;
+  padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
   color: #3b6fd4;
   border: 1px solid #3b6fd4;
-  display: inline-block;
-  width: 90px;
+  flex: 1;
   text-align: center;
+  display: inline-block;
 }
 
 .btn-approve {
-  padding: 4px 15px;
+  padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
   color: #2e7d32;
   border: 1px solid #2e7d32;
-  display: inline-block;
-  width: 90px;
+  flex: 1;
   text-align: center;
+  display: inline-block;
 }
 
 .btn-unapprove {
-  padding: 4px 15px;
+  padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
   color: orange;
   border: 1px solid orange;
-  display: inline-block;
-  width: 90px;
+  flex: 1;
   text-align: center;
+  display: inline-block;
 }
 
 .btn-delete {
-  padding: 4px 15px;
+  padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
   background-color: #ffffff;
   color: red;
   border: 1px solid red;
-  display: inline-block;
-  width: 90px;
+  flex: 1;
   text-align: center;
+  display: inline-block;
 }
 
 .btn-view:hover      { background-color: #3b6fd4; color: white; }
@@ -637,10 +646,6 @@ tbody tr:hover {
   margin-bottom: 16px;
 }
 
-#stats-line b {
-  color: #0a5a47;
-}
-
 /* Add form box */
 #add-form-box {
   margin-bottom: 20px;
@@ -648,7 +653,7 @@ tbody tr:hover {
 
 #add-form-box h3 {
   font-size: 0.95rem;
-  color: #0a5a47;
+  color: #25aa99;
 }
 
 .form-row {
@@ -687,9 +692,9 @@ tbody tr:hover {
 
 #add-btn {
   padding: 8px 18px;
-  background-color: #0a5a47;
-  color: white;
-  border: none;
+  background-color: #ffffff;
+  color: #25aa99;
+  border: 1px solid #25aa99;
   border-radius: 4px;
   font-size: 0.82rem;
   font-family: "Montserrat", sans-serif;
@@ -698,39 +703,49 @@ tbody tr:hover {
 }
 
 #add-btn:hover {
-  background-color: #084033;
+  background-color: #25aa99;
+  color: #ffffff;
 }
 
 /* Action buttons */
-.action-btns {
+.cat-action-btns {
   display: flex;
   gap: 8px;
+  width: 200px;
 }
 
 .btn-edit {
-  padding: 4px 12px;
+  padding: 4px 10px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
-  background-color: #fff3e0;
-  color: #e67e00;
+  background-color: #ffffff;
+  color: #3b6fd4;
+  border: 1px solid #3b6fd4;
+  flex: 1;
+  text-align: center;
+  display: inline-block;
 }
 
 .btn-delete {
-  padding: 4px 12px;
+  padding: 4px 14px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 0.75rem;
-  background-color: #fce4ec;
-  color: #c2185b;
+  background-color: #ffffff;
+  color: red;
+  border: 1px solid red;
+  flex: 1;
+  text-align: center;
+  display: inline-block;
 }
 
-.btn-edit:hover   { background-color: #e67e00; color: white; }
-.btn-delete:hover { background-color: #c2185b; color: white; }
+.btn-edit:hover   { background-color: #3b6fd4; color: white; }
+.btn-delete:hover { background-color: red; color: white; }
 
 /* Footer */
 footer {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   text-align: center;
   padding: 10px;
   color: white;
@@ -739,7 +754,7 @@ footer {
 }
 
 #com-footer {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   text-align: center;
   padding: 10px;
   color: white;

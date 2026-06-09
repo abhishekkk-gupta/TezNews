@@ -12,18 +12,20 @@ body {
 
 /* Navbar */
 nav {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   padding: 14px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 1000; 
 }
 
 #logo {
     width: 3%;
     display: block;
+    border-radius: 95%;
 }
 
 #nav-links a {
@@ -67,8 +69,8 @@ nav {
 .section-box h2 {
   font-size: 1.3rem;
   margin-bottom: 6px;
-  color: #0a5a47;
-  border-left: 4px solid #0a5a47;
+  color: #25aa99;
+  border-left: 4px solid #25aa99;
   padding-left: 10px;
 }
 
@@ -98,7 +100,7 @@ nav {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #0a5a47;
+  border: 3px solid #25aa99;
 }
 
 #profile-info p {
@@ -111,18 +113,18 @@ nav {
 .btn {
   display: inline-block;
   background-color: #ffff;
-  color: #0a5a47;
+  color: #25aa99;
   padding: 9px 22px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.85rem;
   margin-top: -30px;
   float: right;
-  border: 2px solid #0a5a47;
+  border: 2px solid #25aa99;
 }
 
 .btn:hover {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   color: #ffff;
 
 }
@@ -155,9 +157,9 @@ nav {
 }
 
 .active-topic {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   color: white;
-  border-color: #0a5a47;
+  border-color: #25aa99;
 }
 
 /* Article row */
@@ -184,7 +186,7 @@ nav {
   height: 155px;
   object-fit: cover;
   border-radius: 4px;
-  border: 2px solid #0a5a47;
+  border: 2px solid #25aa99;
   background-color: #dddddd;
 }
 
@@ -215,8 +217,8 @@ nav {
 .r-btn {
   display: inline-block;
   background-color: #ffff;
-  color: #0a5a47;
-  border: 2px solid #0a5a47;
+  color: #25aa99;
+  border: 2px solid #25aa99;
   padding: 9px 22px;
   margin-right: 15px;
   border-radius: 5px;
@@ -227,13 +229,140 @@ nav {
 }
 
 .r-btn:hover {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   color: #ffff;
 }
 
+/*subscription page styling*/
+/* Plans row */
+#plans-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
 
+/* Plan card */
+.plan-card {
+  background-color: white;
+  border: 2px double #25aa99;
+  border-radius: 8px;
+  padding: 28px 24px;
+  flex: 1;
+  min-width: 240px;
+  position: relative;
+}
+
+.plan-duration {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.plan-price {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #25aa99;
+}
+
+.plan-price span {
+  font-size: 0.82rem;
+  font-weight: normal;
+  color: #888888;
+}
+
+.plan-desc {
+  font-size: 0.78rem;
+  color: #888888;
+  margin-bottom: 16px;
+}
+
+.plan-divider {
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 16px;
+}
+
+/* Features list */
+.plan-features {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.plan-features li {
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.feature-no {
+  color: #bbbbbb !important;
+}
+
+/* Plan button */
+.plan-btn {
+  display: block;
+  text-align: center;
+  background-color: #ffffff;
+  color: #25aa99;
+  border: 2px solid #25aa99;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: bold;
+}
+
+.plan-btn:hover {
+  background-color: #25aa99;
+  color: #ffffff;
+}
+
+/* Note box */
+#note-box {
+  background-color: #e0f7f4;
+  border: 1px solid #25aa99;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  color: #25aa99;
+  margin-bottom: 32px;
+}
+
+/* FAQ */
+#faq-section h2 {
+  font-size: 1.1rem;
+  color: #222222;
+  margin-bottom: 16px;
+  border-left: 4px solid #25aa99;
+  padding-left: 10px;
+}
+
+.faq-item {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+
+.faq-q {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+.faq-a {
+  font-size: 0.82rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Footer */
 footer {
-  background-color: #0a5a47;
+  background-color: #25aa99;
   text-align: center;
   padding: 10px;
   color: white;

@@ -4,13 +4,15 @@ body {
   align-items: center;     
   min-height: 100vh;       
   margin: 0;               
-  background-color: #0a5a47; 
+  background-color: #25aa99; 
 }
 
 #logo {
     width: 40%;
     display: block;
     margin: 0 auto;
+    border: 2px solid #25aa99;
+    border-radius: 95%;
 }
 
 /* Log In Style */
@@ -26,7 +28,7 @@ body {
     max-width: 450px;        
     border-radius: 12px;      
     box-sizing: border-box;
-    height: 480px;
+    height: 500px;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -54,9 +56,9 @@ body {
 #login-btn {
   width: 150px;
   padding: 12px;
-  background-color: #0a5a47; 
-  color: white;
-  border: 1px white;
+  background-color: #ffffff; 
+  color: #25aa99;
+  border: 2px solid #25aa99;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
@@ -66,7 +68,8 @@ body {
 }
 
 #login-btn:hover {
-  background-color: #059891;
+  background-color: #25aa99;
+  color: #ffffff;
 }
 
 #error-msg{
