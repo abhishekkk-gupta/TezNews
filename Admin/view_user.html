@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View User - TezNews Admin</title>
+    <link rel="icon" type="image/png" href="images/logo_wbg.jpg">
+    <link rel="stylesheet" href="dash_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <img id="logo" src="images/logo_wbg.jpg" alt="TezNews Logo">
+    <div id="nav-links">
+      <a href="admin-dashboard.html">HOME</a>
+      <a href="all_articles.html">ARTICLES</a>
+      <a href="all_users.html" id="active-link">ALL USERS</a>
+      <a href="comments.html">COMMENTS</a>
+      <a href="categories.html">CATEGORIES</a>
+      <a href="admin.html">LOG OUT</a>
+    </div>
+  </nav>
+
+  <div id="main">
+
+    <!-- Page heading -->
+    <div class="section-box">
+      <h2>View User 👤</h2>
+      <p class="section-desc">Full details of the selected user</p>
+    </div>
+
+    <!-- Profile section -->
+    <div class="table-section" id="profile-box">
+      <div id="profile-top">
+        <img src="../user/images/profile.jpg" alt="User Photo" id="profile-img">
+        <div id="profile-name-box">
+          <h3 id="user-name">Aahan Sultan</h3>
+          <p id="member-since">Member since: January 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- User details table -->
+    <div class="table-section">
+      <div class="table-heading">
+        <h3>User Information</h3>
+      </div>
+      <table id="details-table">
+        <tbody>
+          <tr>
+            <td class="detail-label">Full Name</td>
+            <td>Aahan B. Sultan</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Email Address</td>
+            <td>aahan@gmail.com</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Phone Number</td>
+            <td>+91 98765 43210</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Date Joined</td>
+            <td>1 June 2026</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Subscription Plan</td>
+            <td>1 Year Plan</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Subscription Expiry</td>
+            <td>1 June 2027</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Total Articles Read</td>
+            <td>142</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Total Comments Posted</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Saved Articles</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td class="detail-label">Account Status</td>
+            <td><span class="status-active">Active</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Topic preferences -->
+    <div class="table-section">
+      <div class="table-heading">
+        <h3>Topic Preferences</h3>
+      </div>
+      <div id="topics-row">
+        <span class="topic active-topic">Politics</span>
+        <span class="topic active-topic">Technology</span>
+        <span class="topic">Sports</span>
+        <span class="topic active-topic">Business</span>
+        <span class="topic active-topic">Economy</span>
+        <span class="topic">Entertainment</span>
+        <span class="topic">Health</span>
+        <span class="topic active-topic">World</span>
+      </div>
+    </div><br>
+
+    <!-- Action buttons -->
+    <div id="action-row">
+      <a href="all_users.html" class="btn-back">Back to All Users</a>
+      <a href="#" class="btn-delete-user">Delete User</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 TezTecch News. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

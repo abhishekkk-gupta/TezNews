@@ -743,6 +743,134 @@ tbody tr:hover {
 .btn-edit:hover   { background-color: #3b6fd4; color: white; }
 .btn-delete:hover { background-color: red; color: white; }
 
+/*View User Page Styling*/
+/* Profile box */
+#profile-box {
+  margin-bottom: 20px;
+}
+
+#profile-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0a5a47;
+  background-color: #dddddd;
+}
+
+#user-name {
+  font-size: 1.1rem;
+  color: #0a5a47;
+  margin-bottom: 5px;
+}
+
+#member-since {
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+/* Details table */
+#details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#details-table tbody tr {
+  border-bottom: 1px solid #eeeeee;
+}
+
+#details-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+#details-table td {
+  padding: 11px 12px;
+  font-size: 0.85rem;
+  color: #333333;
+}
+
+.detail-label {
+  color: #888888 !important;
+  width: 200px;
+  font-weight: bold;
+  font-size: 0.8rem !important;
+}
+
+/* Account status */
+.status-active {
+  color: #2e7d32;
+  font-size: 0.78rem;
+  font-weight: bold;
+}
+
+/* Topic preferences */
+#topics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 4px 0;
+}
+
+.topic {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  border: 1px solid #cccccc;
+  color: #555555;
+  background-color: #f9f9f9;
+}
+
+.active-topic {
+  background-color: #0a5a47;
+  color: white;
+  border-color: #0a5a47;
+}
+
+#action-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center; 
+}
+
+.btn-back {
+  padding: 9px 20px;
+  background-color: #ffffff;
+  color: #0a5a47;
+  border: 1px solid #0a5a47;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.btn-back:hover {
+  background-color: #0a5a47;
+  color: #ffffff;
+}
+
+.btn-delete-user {
+  padding: 9px 20px;
+  background-color: #ffffff;
+  color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.btn-delete-user:hover {
+  background-color: red;
+  color: white;
+}
+
+
 /* Footer */
 footer {
   background-color: #0a5a47;
@@ -751,14 +879,4 @@ footer {
   color: white;
   font-size: 0.82rem;
   margin-top: 160px;
-}
-
-#com-footer {
-  background-color: #0a5a47;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  font-size: 0.82rem;
-  width: 100%;
-  box-sizing: border-box;
 }

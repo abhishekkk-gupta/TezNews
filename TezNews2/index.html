@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TezNews – India's Fastest News</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== FIXED NAVBAR WRAPPER ===== -->
+  <div class="navbar-fixed-wrapper">
+
+    <!-- TOP INFO STRIP -->
+    <div class="info-strip">
+      <div class="info-strip-inner">
+        <div class="info-left">
+          <span class="info-date" id="info-date">Wednesday, June 11, 2026</span>
+          <span class="info-sep">|</span>
+          <span class="info-time" id="info-time">10:30 AM</span>
+          <span class="info-sep">|</span>
+          <span class="info-weather">&#9729; 29°C, Nagpur &nbsp; Partly Cloudy</span>
+        </div>
+        <div class="info-right">
+          <a href="#" class="info-btn info-signup">Sign Up</a>
+          <a href="#" class="info-btn info-subscribe">Subscribe</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="navbar">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <img src="logo.jpg" alt="TezNews Logo" class="nav-logo-img" />
+          <span class="nav-logo-text">TezNews</span>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#">City</a>
+          <a href="#" class="live-link">&#9679; Live</a>
+          <a href="#">India</a>
+          <a href="#">World</a>
+          <a href="#">Business</a>
+          <a href="#">Sports</a>
+          <a href="#">Cricket</a>
+          <a href="#">Entertainment</a>
+          <a href="#">Tech</a>
+          <a href="#">Life &amp; Style</a>
+          <a href="#">Photos</a>
+          <a href="#">Blogs</a>
+        </nav>
+
+        <div class="nav-right">
+          <button class="icon-btn" aria-label="Search">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="Menu">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+          <a href="#" class="epaper-btn">EPAPER</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- LIVE NEWS TICKER -->
+    <div class="ticker-strip">
+      <div class="ticker-inner">
+        <span class="ticker-label">&#9679; LATEST</span>
+        <div class="ticker-track-wrap">
+          <div class="ticker-track">
+            <span class="ticker-item">PM Modi chairs emergency security meeting after fresh border skirmish reported in Kupwara sector</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">India's forex reserves touch all-time high of $712 billion; RBI governor credits strong export growth</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">Supreme Court orders CBI inquiry into Manipur relief fund diversion; hearing adjourned to July 2</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">Monsoon hits Mumbai, Pune and Konkan coast 4 days ahead of schedule; IMD issues orange alert</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">Sensex surges 820 points, Nifty crosses 25,400 on strong FII inflows and positive global cues</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">ISRO successfully tests cryogenic engine for Chandrayaan-4; launch window confirmed for December 2026</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">Shah Rukh Khan's 'King' trailer crosses 100 million views in 18 hours, breaks all Bollywood records</span>
+            <span class="ticker-dot">&#9679;</span>
+            <span class="ticker-item">India beats Sri Lanka by 9 wickets in T20I series opener; Yashasvi Jaiswal scores unbeaten 94</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- END FIXED WRAPPER -->
+
+  <!-- Spacer to push content below fixed bar -->
+  <div class="navbar-spacer"></div>
+
+  <!-- ===== NEW STORIES PILL ===== -->
+  <div class="new-stories-bar">
+    <button class="new-stories-pill">15 New Stories &#x21BB;</button>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-grid">
+
+    <!-- LEFT COLUMN -->
+    <aside class="col-left">
+
+      <div class="quote-card">
+        <div class="quote-photo-wrap">
+          <img src="https://picsum.photos/80/80?random=10&grayscale" alt="Malcolm X" class="quote-photo" />
+        </div>
+        <p class="quote-label">Quote of the day by <strong>Malcolm X:</strong></p>
+        <p class="quote-text">"Usually when people are sad, they don't do anything. They just cry over their condition. But when they get angry…"</p>
+      </div>
+
+      <div class="left-divider"></div>
+
+      <div class="side-story">
+        <span class="cat-label">Sports</span>
+        <p class="side-headline">NFL Trade Rumors: Los Angeles Rams become the potential landing spot for $5.3 million Chiefs star</p>
+      </div>
+
+      <div class="left-divider"></div>
+
+      <div class="side-story">
+        <span class="cat-label">World</span>
+        <p class="side-headline">US attack on ship: Two Indians found dead, chief engineer still missing after oil tanker crew sent SOS</p>
+      </div>
+
+      <div class="left-divider"></div>
+
+      <div class="side-story">
+        <span class="cat-label">Entertainment</span>
+        <p class="side-headline">'Peddi' action director Sham Kaushal compares Ram Charan's dedication to Aamir Khan's 'Dangal' transformation: 'It is the same…'</p>
+      </div>
+
+      <div class="left-divider"></div>
+
+      <div class="side-story">
+        <span class="cat-label">Entertainment</span>
+        <p class="side-headline">'Alpha' teaser: Katrina Kaif and Priyanka Chopra hail Alia Bhatt's action avatar; Vicky Kaushal calls her 'ALPHA BHATT'</p>
+      </div>
+
+    </aside>
+
+    <!-- CENTER COLUMN -->
+    <section class="col-center">
+
+      <article class="hero-story">
+        <h1 class="hero-headline">'Not an era of war': EAM outlines India's stance on global conflicts, stresses zero tolerance on terror</h1>
+        <div class="hero-img-wrap">
+          <img src="https://picsum.photos/640/360?random=1" alt="EAM press conference" class="hero-img" />
+          <span class="live-badge">&#9679; Live</span>
+        </div>
+      </article>
+
+      <div class="center-divider"></div>
+
+      <article class="secondary-story">
+        <div class="secondary-text">
+          <h2 class="secondary-headline">Firing outside Guru Randhawa's gym; Bishnoi gang claims Salman Khan connection behind attack</h2>
+          <p class="secondary-excerpt">A chilling social media post, attributed to the Lawrence Bishnoi syndicate, claims responsibility for a Delhi gym firing. The motive…</p>
+        </div>
+        <img src="https://picsum.photos/130/90?random=2" alt="story thumbnail" class="thumb" />
+      </article>
+
+      <div class="center-divider"></div>
+
+      <article class="secondary-story">
+        <div class="secondary-text">
+          <h2 class="secondary-headline">190 warheads, 12 deployed: What's behind India's nuclear expansion?</h2>
+          <p class="secondary-excerpt">India is believed to have not only expanded its nuclear arsenal but also deployed a dozen warheads, marking a major shift from its…</p>
+        </div>
+        <img src="https://picsum.photos/130/90?random=3" alt="story thumbnail" class="thumb" />
+      </article>
+
+      <div class="center-divider"></div>
+
+      <article class="secondary-story">
+        <div class="secondary-text">
+          <h2 class="secondary-headline">Trump asked if he is concerned about latest inflation numbers. His answer: 'I love it'</h2>
+          <p class="secondary-excerpt">President Trump expressed an unexpectedly positive view on recent inflation data, surprising economists and market watchers alike…</p>
+        </div>
+        <img src="https://picsum.photos/130/90?random=4" alt="story thumbnail" class="thumb" />
+      </article>
+
+      <div class="center-divider"></div>
+
+      <article class="secondary-story">
+        <div class="secondary-text">
+          <h2 class="secondary-headline">India-Pakistan border tensions rise as ceasefire violations reported for second consecutive week</h2>
+          <p class="secondary-excerpt">Security forces on high alert along the Line of Control as reports of overnight skirmishes surface from multiple sectors…</p>
+        </div>
+        <img src="https://picsum.photos/130/90?random=5" alt="story thumbnail" class="thumb" />
+      </article>
+
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="col-right">
+
+      <div class="featured-videos-header">
+        <span>Featured Videos</span>
+        <span class="fv-arrow">&#8250;</span>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb-wrap">
+          <img src="https://picsum.photos/280/158?random=6" alt="video thumbnail" class="video-thumb" />
+          <span class="tez-badge">TEZ</span>
+          <span class="duration-badge">&#9654; 15:43</span>
+        </div>
+        <p class="video-caption">IRGC Claims Missile Attack On US F-16; High Drama Over Iranian Airspace Amid American Bombings</p>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb-wrap">
+          <img src="https://picsum.photos/280/158?random=7" alt="video thumbnail" class="video-thumb" />
+          <span class="tez-badge">TEZ</span>
+          <span class="duration-badge">&#9654; 12:37</span>
+          <div class="breaking-band breaking-dark">TRUMP WAR SECY'S BOMBSHELL ON 'KILLING' CUBAN PRESIDENT</div>
+        </div>
+        <p class="video-caption">Pete Hegseth's Cuba Invasion Bombshell; 'Capture Or Kill Miguel Diaz-Canel… We'll Decide'</p>
+      </div>
+
+      <div class="video-card">
+        <div class="video-thumb-wrap">
+          <img src="https://picsum.photos/280/158?random=8" alt="video thumbnail" class="video-thumb" />
+          <span class="tez-badge">TEZ</span>
+          <span class="duration-badge">&#9654; 11:26</span>
+          <div class="breaking-band breaking-teal">IRAN HUNTS 'AMERICAN-ISRAELI MOLES' IN MASSIVE CRACKDOWN</div>
+        </div>
+        <p class="video-caption">Iran's Intelligence Ministry Launches Sweeping Arrests Targeting Alleged Foreign Spy Network</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ===== CATEGORY SECTIONS ===== -->
+  <div class="sections-wrapper">
+
+    <!-- TECHNOLOGY -->
+    <section class="cat-section">
+      <div class="cat-section-header">
+        <span class="cat-section-title">Technology</span>
+        <a href="#" class="cat-see-all">See All &rsaquo;</a>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-lead">
+          <div class="cat-lead-img-wrap">
+            <img src="https://picsum.photos/520/300?random=20" alt="Tech lead" class="cat-lead-img" />
+          </div>
+          <span class="cat-label">Technology</span>
+          <h2 class="cat-lead-headline">OpenAI unveils GPT-5 Turbo: real-time reasoning, memory across sessions and multimodal video input now live</h2>
+          <p class="cat-lead-excerpt">The new model is available to ChatGPT Plus and API users globally, and marks the biggest leap in generative AI since GPT-4 launched in 2023…</p>
+        </article>
+        <div class="cat-side-list">
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=21" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Apple's iOS 20 brings AI-powered lock screen, satellite messaging and a redesigned Siri to all iPhones</h3>
+              <p class="cat-side-excerpt">The update, announced at WWDC 2026, will roll out in September and is compatible with iPhone 12 and later…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=22" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">India's homegrown chip SHAKTI-X passes all military-grade stress tests; mass production to begin by 2027</h3>
+              <p class="cat-side-excerpt">IIT Madras researchers confirm the processor performed without error under extreme temperature and radiation conditions…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=23" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Meta's AR glasses finally go on sale: ₹1.2 lakh price tag, six-hour battery and real-time translation</h3>
+              <p class="cat-side-excerpt">The Orion glasses, three years in the making, launched in select markets and are expected in India by Q4 2026…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=24" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">ISRO's Chandrayaan-4 mission locked in for December launch; lunar sample return is the goal</h3>
+              <p class="cat-side-excerpt">Scientists at VSSC confirmed the spacecraft has completed final integration and is en route to Sriharikota…</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ENTERTAINMENT -->
+    <section class="cat-section">
+      <div class="cat-section-header">
+        <span class="cat-section-title">Entertainment</span>
+        <a href="#" class="cat-see-all">See All &rsaquo;</a>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-lead">
+          <div class="cat-lead-img-wrap">
+            <img src="https://picsum.photos/520/300?random=30" alt="Entertainment lead" class="cat-lead-img" />
+          </div>
+          <span class="cat-label">Entertainment</span>
+          <h2 class="cat-lead-headline">Shah Rukh Khan confirms 'Pathaan 2' shoot begins July 2026; Deepika Padukone and a new villain on board</h2>
+          <p class="cat-lead-excerpt">In an exclusive interview, SRK said the sequel will be bigger in scale with action sequences filmed across five countries…</p>
+        </article>
+        <div class="cat-side-list">
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=31" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Ranveer Singh's 'Dhurandhar' crosses ₹300 crore globally in opening weekend, shatters June records</h3>
+              <p class="cat-side-excerpt">Critics call it Ranveer's career-best performance; the film is holding strong despite stiff OTT competition…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=32" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Bigg Boss 20 winner announced: Tejasswi Prakash takes home the trophy and ₹50 lakh prize</h3>
+              <p class="cat-side-excerpt">The season finale drew record 28 million viewers, making it the most-watched Bigg Boss finale in seven years…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=33" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Netflix India drops trailer for 'Sacred Games 3' — release date set for August 15, Independence Day</h3>
+              <p class="cat-side-excerpt">The long-awaited third season picks up five years after the events of Season 2 and introduces a new antagonist…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=34" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Alia Bhatt wins Best Actress at IIFA 2026 for 'Alpha'; makes history as youngest two-time winner</h3>
+              <p class="cat-side-excerpt">The ceremony held in Dubai saw a star-studded night with performances by Dua Lipa and Arijit Singh…</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- WORLD -->
+    <section class="cat-section">
+      <div class="cat-section-header">
+        <span class="cat-section-title">World</span>
+        <a href="#" class="cat-see-all">See All &rsaquo;</a>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-lead">
+          <div class="cat-lead-img-wrap">
+            <img src="https://picsum.photos/520/300?random=40" alt="World lead" class="cat-lead-img" />
+            <span class="live-badge">&#9679; Live</span>
+          </div>
+          <span class="cat-label">World</span>
+          <h2 class="cat-lead-headline">G7 summit ends with joint declaration on AI regulation, climate finance and global minimum corporate tax</h2>
+          <p class="cat-lead-excerpt">Leaders from the seven nations signed a historic pact committing to binding AI safety standards by end of 2026, with India invited as observer…</p>
+        </article>
+        <div class="cat-side-list">
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=41" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Russia-Ukraine ceasefire talks resume in Vienna; both sides agree to prisoner exchange as goodwill measure</h3>
+              <p class="cat-side-excerpt">Mediators from Turkey and the UAE are facilitating the third round of peace negotiations this year…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=42" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">China launches largest-ever naval drill in South China Sea; Philippines and Vietnam issue joint protest</h3>
+              <p class="cat-side-excerpt">The 10-day exercise involves over 40 warships and is seen as a direct response to recent US carrier deployments…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=43" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">UN Security Council votes 12-3 to extend Gaza humanitarian corridor; US abstains for the second time</h3>
+              <p class="cat-side-excerpt">The resolution calls for uninterrupted aid delivery for 90 days and demands all parties respect civilian protections…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=44" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">EU formally opens membership talks with Ukraine; process expected to take minimum 5 years, officials say</h3>
+              <p class="cat-side-excerpt">Brussels called it a landmark moment for European unity, with 24 of 27 member states voting in favor of accession talks…</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SPORTS -->
+    <section class="cat-section">
+      <div class="cat-section-header">
+        <span class="cat-section-title">Sports</span>
+        <a href="#" class="cat-see-all">See All &rsaquo;</a>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-lead">
+          <div class="cat-lead-img-wrap">
+            <img src="https://picsum.photos/520/300?random=50" alt="Sports lead" class="cat-lead-img" />
+          </div>
+          <span class="cat-label">Sports</span>
+          <h2 class="cat-lead-headline">India beats Australia by 6 wickets in the World Test Championship Final; Rohit Sharma lifts trophy at Lord's</h2>
+          <p class="cat-lead-excerpt">Shubman Gill's unbeaten 138 and Jasprit Bumrah's five-wicket haul sealed an emphatic victory for India at the home of cricket…</p>
+        </article>
+        <div class="cat-side-list">
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=51" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Neeraj Chopra breaks his own world record with 92.11m throw at Diamond League meet in Zurich</h3>
+              <p class="cat-side-excerpt">The Olympic champion's historic throw drew a standing ovation from the crowd and cemented his legacy…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=52" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">IPL 2026 final: Mumbai Indians defeat Chennai Super Kings in a Super Over thriller at Wankhede</h3>
+              <p class="cat-side-excerpt">Hardik Pandya's brilliant 68 off 34 balls took the match to a tie before MI held their nerve in the decider…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=53" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Virat Kohli announces ODI retirement after WTC win; will continue playing Test cricket 'for one more year'</h3>
+              <p class="cat-side-excerpt">In an emotional press conference, Kohli thanked fans and said the Lord's win was the perfect farewell to limited-overs cricket…</p>
+            </div>
+          </article>
+          <div class="cat-inner-divider"></div>
+          <article class="cat-side-item">
+            <img src="https://picsum.photos/110/80?random=54" alt="" class="cat-side-thumb" />
+            <div class="cat-side-text">
+              <h3 class="cat-side-headline">Real Madrid win UEFA Champions League 2026 beating PSG 3-1; Mbappe scores twice against his former club</h3>
+              <p class="cat-side-excerpt">The match drew 85,000 spectators to the Allianz Arena in Munich in what pundits called a fitting final…</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== VIDEO NEWS SECTION ===== -->
+  <section class="video-news-section">
+    <div class="video-news-inner">
+      <div class="video-news-header">
+        <span class="video-news-title">&#9654; Video News</span>
+        <a href="#" class="cat-see-all">See All &rsaquo;</a>
+      </div>
+      <div class="video-news-grid">
+        <div class="vn-main">
+          <div class="vn-main-thumb-wrap">
+            <img src="https://picsum.photos/620/350?random=60" alt="Featured video" class="vn-main-thumb" />
+            <div class="vn-play-overlay">&#9654;</div>
+            <span class="vn-duration">18:42</span>
+            <div class="vn-main-label">EXCLUSIVE REPORT</div>
+          </div>
+          <p class="vn-main-caption">Operation Sindoor Aftermath: India's military strategy, Pakistan's response and what the world got wrong about South Asia's new balance of power</p>
+          <span class="vn-meta">Jun 11, 2026 &nbsp;|&nbsp; 2.4M views</span>
+        </div>
+        <div class="vn-side-list">
+          <div class="vn-side-item">
+            <div class="vn-side-thumb-wrap">
+              <img src="https://picsum.photos/240/140?random=61" alt="" class="vn-side-thumb" />
+              <div class="vn-play-sm">&#9654;</div>
+              <span class="vn-duration-sm">09:15</span>
+            </div>
+            <div class="vn-side-text">
+              <p class="vn-side-caption">Budget 2026 decoded: What the ₹48 lakh crore plan means for the common man, farmers and startups</p>
+              <span class="vn-meta">Jun 10, 2026 &nbsp;|&nbsp; 1.1M views</span>
+            </div>
+          </div>
+          <div class="vn-side-item">
+            <div class="vn-side-thumb-wrap">
+              <img src="https://picsum.photos/240/140?random=62" alt="" class="vn-side-thumb" />
+              <div class="vn-play-sm">&#9654;</div>
+              <span class="vn-duration-sm">07:33</span>
+            </div>
+            <div class="vn-side-text">
+              <p class="vn-side-caption">Inside the G7 AI summit: How world leaders plan to regulate artificial intelligence before it's too late</p>
+              <span class="vn-meta">Jun 10, 2026 &nbsp;|&nbsp; 876K views</span>
+            </div>
+          </div>
+          <div class="vn-side-item">
+            <div class="vn-side-thumb-wrap">
+              <img src="https://picsum.photos/240/140?random=63" alt="" class="vn-side-thumb" />
+              <div class="vn-play-sm">&#9654;</div>
+              <span class="vn-duration-sm">11:04</span>
+            </div>
+            <div class="vn-side-text">
+              <p class="vn-side-caption">Mumbai monsoon havoc: Flooding across 12 suburbs, 3 dead and IMD issues red alert for next 48 hours</p>
+              <span class="vn-meta">Jun 9, 2026 &nbsp;|&nbsp; 2.8M views</span>
+            </div>
+          </div>
+          <div class="vn-side-item">
+            <div class="vn-side-thumb-wrap">
+              <img src="https://picsum.photos/240/140?random=64" alt="" class="vn-side-thumb" />
+              <div class="vn-play-sm">&#9654;</div>
+              <span class="vn-duration-sm">14:20</span>
+            </div>
+            <div class="vn-side-text">
+              <p class="vn-side-caption">Chandrayaan-4 mission explained: What India hopes to bring back from the Moon and why it matters</p>
+              <span class="vn-meta">Jun 9, 2026 &nbsp;|&nbsp; 3.2M views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="logo.jpg" alt="TezNews" class="footer-logo-img" />
+        <span class="footer-logo-text">TezNews</span>
+      </div>
+      <p class="footer-tagline">India's Fastest News — Breaking Stories, Real Time.</p>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Advertise</a>
+        <a href="#">RSS Feed</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 TezNews. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Live clock
+    function updateTime() {
+      const now = new Date();
+      const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      const dateStr = days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
+      let h = now.getHours(), m = now.getMinutes(), ampm = h >= 12 ? 'PM' : 'AM';
+      h = h % 12 || 12;
+      const timeStr = h + ':' + (m < 10 ? '0' : '') + m + ' ' + ampm;
+      document.getElementById('info-date').textContent = dateStr;
+      document.getElementById('info-time').textContent = timeStr;
+    }
+    updateTime();
+    setInterval(updateTime, 10000);
+  </script>
+
+</body>
+</html>
