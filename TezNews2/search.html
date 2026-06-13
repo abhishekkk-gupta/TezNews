@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search – TezNews</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="search.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="logo.jpg" alt="TezNews Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Tez<span style="color: #ffcc00;">News</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">India</a>
+        <a href="#">World</a>
+        <a href="#">Business</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+        <a href="#">Tech</a>
+      </nav>
+      <div class="nav-right">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+        <a href="../user/profile.html" class="epaper-btn">PROFILE</a>
+        <a href="../user/subscription.html" class="epaper-btn">SUBSCRIBE</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SEARCH HERO ===== -->
+  <div class="search-hero">
+    <div class="search-hero-inner">
+      <h1 class="search-hero-title">Search TezNews</h1>
+      <p class="search-hero-sub">Find news, articles and stories from across all categories</p>
+      <div class="search-bar-wrap">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search for news, people, topics…"
+          autocomplete="off"
+        />
+        <button class="search-submit-btn" onclick="runSearch()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          Search
+        </button>
+      </div>
+      <!-- Popular searches -->
+      <div class="popular-searches">
+        <span class="popular-label">Popular:</span>
+        <button class="popular-tag" onclick="quickSearch('Modi')">Modi</button>
+        <button class="popular-tag" onclick="quickSearch('Cricket')">Cricket</button>
+        <button class="popular-tag" onclick="quickSearch('IPL')">IPL</button>
+        <button class="popular-tag" onclick="quickSearch('Budget')">Budget</button>
+        <button class="popular-tag" onclick="quickSearch('AI')">AI</button>
+        <button class="popular-tag" onclick="quickSearch('Bollywood')">Bollywood</button>
+        <button class="popular-tag" onclick="quickSearch('Israel')">Israel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN LAYOUT ===== -->
+  <div class="search-page">
+    <div class="search-page-inner">
+
+      <!-- LEFT: RESULTS -->
+      <main class="search-main">
+
+        <!-- Results header (hidden until search runs) -->
+        <div class="results-header" id="resultsHeader" style="display:none;">
+          <p class="results-count" id="resultsCount"></p>
+          <div class="results-sort">
+            <span class="sort-label">Sort by:</span>
+            <button class="sort-btn sort-active" onclick="setSort('relevant', this)">Most Relevant</button>
+            <button class="sort-btn" onclick="setSort('newest', this)">Newest First</button>
+          </div>
+        </div>
+
+        <!-- Default state (before search) -->
+        <div id="defaultState">
+          <div class="default-heading-row">
+            <h2 class="default-heading">Latest Stories</h2>
+          </div>
+          <div id="defaultArticles" class="results-list"></div>
+        </div>
+
+        <!-- Results container -->
+        <div id="resultsContainer" style="display:none;">
+          <div id="resultsList" class="results-list"></div>
+          <!-- No results -->
+          <div id="noResults" class="no-results" style="display:none;">
+            <div class="no-results-icon">&#128269;</div>
+            <h2 class="no-results-title">No results found</h2>
+            <p class="no-results-text">We couldn't find anything matching <strong id="noResultsQuery"></strong>. Try different keywords or browse our categories below.</p>
+            <div class="no-results-cats">
+              <a href="category.html" class="nr-cat-btn">India</a>
+              <a href="category.html" class="nr-cat-btn">World</a>
+              <a href="category.html" class="nr-cat-btn">Sports</a>
+              <a href="category.html" class="nr-cat-btn">Entertainment</a>
+              <a href="category.html" class="nr-cat-btn">Tech</a>
+              <a href="category.html" class="nr-cat-btn">Business</a>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- RIGHT: SIDEBAR -->
+      <aside class="search-sidebar">
+
+        <div class="sidebar-widget">
+          <div class="widget-header">Browse Categories</div>
+          <div class="cat-browse-list">
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">India</span>
+              <span class="cat-browse-count">124</span>
+            </a>
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">World</span>
+              <span class="cat-browse-count">98</span>
+            </a>
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">Sports</span>
+              <span class="cat-browse-count">86</span>
+            </a>
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">Entertainment</span>
+              <span class="cat-browse-count">74</span>
+            </a>
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">Technology</span>
+              <span class="cat-browse-count">61</span>
+            </a>
+            <a href="category.html" class="cat-browse-item">
+              <span class="cat-browse-name">Business</span>
+              <span class="cat-browse-count">53</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-header">Trending Now</div>
+          <ol class="most-read-list">
+            <li class="most-read-item">
+              <span class="mr-num">01</span>
+              <div>
+                <a href="article.html" class="mr-headline">India wins WTC Final at Lord's; Rohit lifts the trophy</a>
+                <span class="mr-cat">Cricket</span>
+              </div>
+            </li>
+            <li class="most-read-item">
+              <span class="mr-num">02</span>
+              <div>
+                <a href="article.html" class="mr-headline">PM Modi chairs emergency security meeting after border skirmish</a>
+                <span class="mr-cat">India</span>
+              </div>
+            </li>
+            <li class="most-read-item">
+              <span class="mr-num">03</span>
+              <div>
+                <a href="article.html" class="mr-headline">OpenAI unveils GPT-5 Turbo with real-time reasoning</a>
+                <span class="mr-cat">Tech</span>
+              </div>
+            </li>
+            <li class="most-read-item">
+              <span class="mr-num">04</span>
+              <div>
+                <a href="article.html" class="mr-headline">Sensex surges 820 points on strong FII inflows</a>
+                <span class="mr-cat">Business</span>
+              </div>
+            </li>
+            <li class="most-read-item">
+              <span class="mr-num">05</span>
+              <div>
+                <a href="article.html" class="mr-headline">Shah Rukh Khan confirms 'Pathaan 2' shoot begins July 2026</a>
+                <span class="mr-cat">Entertainment</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="sidebar-widget newsletter-widget">
+          <div class="widget-header">Stay Updated</div>
+          <p class="newsletter-text">Get top stories delivered to your inbox every morning.</p>
+          <input type="email" class="newsletter-input" placeholder="Enter your email" />
+          <button class="newsletter-btn">Subscribe Free</button>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <img src="logo.jpg" alt="TezNews" class="footer-logo-img" />
+        <span class="footer-logo-text">Tez<span style="color: #ffcc00;">News</span></span>
+      </div><br>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Advertise</a>
+      </div><br>
+      <p class="footer-copy">&copy; 2026 TezNews. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SEARCH JAVASCRIPT ===== -->
+  <script>
+
+    // ── Article database ──────────────────────────────────────────
+    const articles = [
+      {
+        id: 1,
+        title: "'Not an era of war': EAM outlines India's stance on global conflicts, stresses zero tolerance on terror",
+        excerpt: "External Affairs Minister S. Jaishankar addressed world leaders at a high-level security forum, reaffirming India's commitment to diplomacy while drawing a firm line against cross-border terrorism.",
+        category: "India",
+        author: "Priya Sharma",
+        date: "Jun 11, 2026",
+        img: "https://picsum.photos/200/130?random=1",
+        url: "article.html"
+      },
+      {
+        id: 2,
+        title: "PM Modi chairs emergency security meeting after fresh border skirmish reported in Kupwara sector",
+        excerpt: "The Prime Minister held an unscheduled high-level security review with NSA Ajit Doval and the three service chiefs following overnight firing along the Line of Control.",
+        category: "India",
+        author: "Arjun Nair",
+        date: "Jun 11, 2026",
+        img: "https://picsum.photos/200/130?random=2",
+        url: "article.html"
+      },
+      {
+        id: 3,
+        title: "India beats Australia by 6 wickets in the World Test Championship Final; Rohit Sharma lifts trophy at Lord's",
+        excerpt: "Shubman Gill's unbeaten 138 and Jasprit Bumrah's five-wicket haul sealed an emphatic victory for India at the home of cricket.",
+        category: "Sports",
+        author: "Rahul Mehta",
+        date: "Jun 11, 2026",
+        img: "https://picsum.photos/200/130?random=3",
+        url: "article.html"
+      },
+      {
+        id: 4,
+        title: "Virat Kohli announces ODI retirement after WTC win; will continue playing Test cricket 'for one more year'",
+        excerpt: "In an emotional press conference at Lord's, Kohli thanked fans and said the Lord's win was the perfect farewell to limited-overs cricket.",
+        category: "Sports",
+        author: "Rahul Mehta",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=4",
+        url: "article.html"
+      },
+      {
+        id: 5,
+        title: "IPL 2026 final: Mumbai Indians defeat Chennai Super Kings in a Super Over thriller at Wankhede Stadium",
+        excerpt: "Hardik Pandya's brilliant 68 off 34 balls took the match to a tie before Mumbai Indians held their nerve in the decider.",
+        category: "Sports",
+        author: "Sneha Kulkarni",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=5",
+        url: "article.html"
+      },
+      {
+        id: 6,
+        title: "Neeraj Chopra breaks his own world record with 92.11m throw at Diamond League meet in Zurich",
+        excerpt: "The Olympic champion's historic throw drew a standing ovation from the crowd and cemented his legacy as the greatest javelin thrower India has produced.",
+        category: "Sports",
+        author: "Rohit Bose",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=6",
+        url: "article.html"
+      },
+      {
+        id: 7,
+        title: "OpenAI unveils GPT-5 Turbo: real-time reasoning, memory across sessions and multimodal video input now live",
+        excerpt: "The new model is available to ChatGPT Plus and API users globally, and marks the biggest leap in generative AI since GPT-4 launched in 2023.",
+        category: "Technology",
+        author: "Karan Desai",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=7",
+        url: "article.html"
+      },
+      {
+        id: 8,
+        title: "Apple's iOS 20 brings AI-powered lock screen, satellite messaging and a redesigned Siri to all iPhones",
+        excerpt: "The update, announced at WWDC 2026, will roll out in September and is compatible with iPhone 12 and later models.",
+        category: "Technology",
+        author: "Karan Desai",
+        date: "Jun 9, 2026",
+        img: "https://picsum.photos/200/130?random=8",
+        url: "article.html"
+      },
+      {
+        id: 9,
+        title: "ISRO's Chandrayaan-4 mission locked in for December launch; lunar sample return is the goal",
+        excerpt: "Scientists at VSSC confirmed the spacecraft has completed final integration and is en route to Sriharikota for the launch campaign.",
+        category: "India",
+        author: "Meera Iyer",
+        date: "Jun 9, 2026",
+        img: "https://picsum.photos/200/130?random=9",
+        url: "article.html"
+      },
+      {
+        id: 10,
+        title: "Sensex surges 820 points, Nifty crosses 25,400 on strong FII inflows and positive global cues",
+        excerpt: "Markets hit a three-month high as foreign institutional investors pumped in over ₹4,200 crore in a single session.",
+        category: "Business",
+        author: "Ananya Roy",
+        date: "Jun 11, 2026",
+        img: "https://picsum.photos/200/130?random=10",
+        url: "article.html"
+      },
+      {
+        id: 11,
+        title: "Shah Rukh Khan confirms 'Pathaan 2' shoot begins July 2026; Deepika Padukone and a new villain on board",
+        excerpt: "In an exclusive interview, SRK said the sequel will be bigger in scale with action sequences filmed across five countries.",
+        category: "Entertainment",
+        author: "Divya Menon",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=11",
+        url: "article.html"
+      },
+      {
+        id: 12,
+        title: "Ranveer Singh's 'Dhurandhar' crosses ₹300 crore globally in opening weekend, shatters June records",
+        excerpt: "Critics call it Ranveer's career-best performance; the film is holding strong despite stiff OTT competition.",
+        category: "Entertainment",
+        author: "Divya Menon",
+        date: "Jun 9, 2026",
+        img: "https://picsum.photos/200/130?random=12",
+        url: "article.html"
+      },
+      {
+        id: 13,
+        title: "G7 summit ends with joint declaration on AI regulation, climate finance and global minimum corporate tax",
+        excerpt: "Leaders from the seven nations signed a historic pact committing to binding AI safety standards by end of 2026.",
+        category: "World",
+        author: "Sameer Kapoor",
+        date: "Jun 10, 2026",
+        img: "https://picsum.photos/200/130?random=13",
+        url: "article.html"
+      },
+      {
+        id: 14,
+        title: "Russia-Ukraine ceasefire talks resume in Vienna; both sides agree to prisoner exchange as goodwill measure",
+        excerpt: "Mediators from Turkey and the UAE are facilitating the third round of peace negotiations this year.",
+        category: "World",
+        author: "Sameer Kapoor",
+        date: "Jun 9, 2026",
+        img: "https://picsum.photos/200/130?random=14",
+        url: "article.html"
+      },
+      {
+        id: 15,
+        title: "India-Pakistan border tensions rise as ceasefire violations reported for second consecutive week",
+        excerpt: "Security forces on high alert along the Line of Control as reports of overnight skirmishes surface from multiple sectors.",
+        category: "India",
+        author: "Arjun Nair",
+        date: "Jun 9, 2026",
+        img: "https://picsum.photos/200/130?random=15",
+        url: "article.html"
+      },
+      {
+        id: 16,
+        title: "Budget 2026: Finance Minister presents ₹48 lakh crore budget; tax relief for middle class, boost for startups",
+        excerpt: "The Union Budget 2026-27 raises the income tax exemption limit to ₹10 lakh and allocates ₹1.2 lakh crore for infrastructure.",
+        category: "Business",
+        author: "Ananya Roy",
+        date: "Jun 8, 2026",
+        img: "https://picsum.photos/200/130?random=16",
+        url: "article.html"
+      },
+      {
+        id: 17,
+        title: "Monsoon hits Mumbai and Pune 4 days ahead of schedule; IMD issues orange alert for Konkan coast",
+        excerpt: "The southwest monsoon made an early landfall bringing heavy to very heavy rainfall across coastal Maharashtra.",
+        category: "India",
+        author: "Priya Sharma",
+        date: "Jun 8, 2026",
+        img: "https://picsum.photos/200/130?random=17",
+        url: "article.html"
+      },
+      {
+        id: 18,
+        title: "Meta's AR glasses finally go on sale: ₹1.2 lakh price tag, six-hour battery and real-time translation",
+        excerpt: "The Orion glasses, three years in the making, launched in select markets and are expected in India by Q4 2026.",
+        category: "Technology",
+        author: "Karan Desai",
+        date: "Jun 8, 2026",
+        img: "https://picsum.photos/200/130?random=18",
+        url: "article.html"
+      },
+      {
+        id: 19,
+        title: "Alia Bhatt wins Best Actress at IIFA 2026 for 'Alpha'; makes history as youngest two-time winner",
+        excerpt: "The ceremony held in Dubai saw a star-studded night with performances by Dua Lipa and Arijit Singh.",
+        category: "Entertainment",
+        author: "Divya Menon",
+        date: "Jun 7, 2026",
+        img: "https://picsum.photos/200/130?random=19",
+        url: "article.html"
+      },
+      {
+        id: 20,
+        title: "India's homegrown chip SHAKTI-X passes all military-grade stress tests; mass production to begin by 2027",
+        excerpt: "IIT Madras researchers confirm the processor performed without error under extreme temperature and radiation conditions.",
+        category: "Technology",
+        author: "Meera Iyer",
+        date: "Jun 7, 2026",
+        img: "https://picsum.photos/200/130?random=20",
+        url: "article.html"
+      }
+    ];
+
+    // ── Sort state ─────────────────────────────────────────────────
+    let currentSort = 'relevant';
+    let lastQuery   = '';
+
+    // ── Highlight matching text ────────────────────────────────────
+    function highlight(text, query) {
+      if (!query) return text;
+      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+      return text.replace(regex, '<mark class="hl">$1</mark>');
+    }
+
+    // ── Build a single result card ─────────────────────────────────
+    function buildCard(article, query) {
+      return `
+        <article class="result-card">
+          <a href="${article.url}">
+            <img src="${article.img}" alt="" class="result-thumb" />
+          </a>
+          <div class="result-body">
+            <span class="result-cat">${article.category}</span>
+            <h2 class="result-headline">
+              <a href="${article.url}">${highlight(article.title, query)}</a>
+            </h2>
+            <p class="result-excerpt">${highlight(article.excerpt, query)}</p>
+            <div class="result-meta">
+              <span>By <strong>${article.author}</strong></span>
+              <span class="meta-sep">·</span>
+              <span>${article.date}</span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    // ── Main search function ───────────────────────────────────────
+    function runSearch() {
+      const query = document.getElementById('searchInput').value.trim();
+      if (!query) return;
+      lastQuery = query;
+
+      const q = query.toLowerCase();
+
+      let results = articles.filter(a =>
+        a.title.toLowerCase().includes(q)    ||
+        a.excerpt.toLowerCase().includes(q)  ||
+        a.category.toLowerCase().includes(q) ||
+        a.author.toLowerCase().includes(q)
+      );
+
+      if (currentSort === 'newest') {
+        // already ordered newest first in the array, no change needed
+        // (in a real app you'd sort by date object)
+      }
+
+      // Hide default, show results section
+      document.getElementById('defaultState').style.display    = 'none';
+      document.getElementById('resultsContainer').style.display = 'block';
+      document.getElementById('resultsHeader').style.display    = 'flex';
+
+      const countEl = document.getElementById('resultsCount');
+      const listEl  = document.getElementById('resultsList');
+      const noEl    = document.getElementById('noResults');
+
+      if (results.length === 0) {
+        countEl.textContent = `No results for "${query}"`;
+        listEl.innerHTML    = '';
+        noEl.style.display  = 'block';
+        document.getElementById('noResultsQuery').textContent = `"${query}"`;
+      } else {
+        countEl.innerHTML   = `Showing <strong>${results.length}</strong> result${results.length > 1 ? 's' : ''} for "<strong>${query}</strong>"`;
+        noEl.style.display  = 'none';
+        listEl.innerHTML    = results.map(a => buildCard(a, query)).join('');
+      }
+    }
+
+    // ── Quick-search from popular tag buttons ──────────────────────
+    function quickSearch(term) {
+      document.getElementById('searchInput').value = term;
+      runSearch();
+      window.scrollTo({ top: document.querySelector('.search-page').offsetTop - 20, behavior: 'smooth' });
+    }
+
+    // ── Sort toggle ────────────────────────────────────────────────
+    function setSort(type, btn) {
+      currentSort = type;
+      document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('sort-active'));
+      btn.classList.add('sort-active');
+      if (lastQuery) runSearch();
+    }
+
+    // ── Enter key support ──────────────────────────────────────────
+    document.getElementById('searchInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') runSearch();
+    });
+
+    // ── Load latest stories in default state ──────────────────────
+    (function loadDefaults() {
+      const latest = articles.slice(0, 8);
+      document.getElementById('defaultArticles').innerHTML =
+        latest.map(a => buildCard(a, '')).join('');
+    })();
+
+  </script>
+
+</body>
+</html>

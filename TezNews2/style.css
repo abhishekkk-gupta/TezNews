@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--white);
   color: var(--text-dark);
   font-size: 14px;
@@ -177,7 +177,7 @@ img {
 }
 
 .nav-logo-text {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif; 
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
@@ -303,7 +303,7 @@ img {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  animation: tickerScroll 50s linear infinite;
+  animation: tickerScroll 70s linear infinite;
 }
 
 .ticker-track:hover {
@@ -441,7 +441,7 @@ img {
 }
 
 .side-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
@@ -467,7 +467,7 @@ img {
 }
 
 .hero-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif; 
   font-size: 26px;
   font-weight: 700;
   color: var(--text-dark);
@@ -520,7 +520,7 @@ img {
 }
 
 .secondary-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15.5px;
   font-weight: 700;
   color: var(--text-dark);
@@ -639,7 +639,7 @@ img {
 }
 
 .video-caption {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
@@ -681,7 +681,7 @@ img {
 }
 
 .cat-section-title {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--text-dark);
@@ -725,7 +725,7 @@ img {
 }
 
 .cat-lead-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif; 
   font-size: 18px;
   font-weight: 700;
   color: var(--text-dark);
@@ -769,7 +769,7 @@ img {
 }
 
 .cat-side-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif; 
   font-size: 13.5px;
   font-weight: 700;
   color: var(--text-dark);
@@ -799,7 +799,7 @@ img {
 
 .video-news-section {
   background: var(--bg-light);
-  border-top: 3px solid var(--green);
+  /* border-top: 3px solid var(--green); */
   margin-top: 28px;
   padding: 24px 0 32px;
 }
@@ -820,7 +820,7 @@ img {
 }
 
 .video-news-title {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--text-dark);
@@ -894,7 +894,7 @@ img {
 }
 
 .vn-main-caption {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--text-dark);
@@ -978,7 +978,7 @@ img {
 }
 
 .vn-side-caption {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif; 
   font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
@@ -1025,16 +1025,10 @@ img {
 }
 
 .footer-logo-text {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
-}
-
-.footer-tagline {
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 14px;
 }
 
 .footer-links {

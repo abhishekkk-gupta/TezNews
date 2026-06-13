@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TezNews – India's Fastest News</title>
+  <title>TezNews</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,8 +26,7 @@
           <span class="info-weather">&#9729; 29°C, Nagpur &nbsp; Partly Cloudy</span>
         </div>
         <div class="info-right">
-          <a href="#" class="info-btn info-signup">Sign Up</a>
-          <a href="#" class="info-btn info-subscribe">Subscribe</a>
+          <a href="../Starter Pages/sign_up.html" class="info-btn info-signup">Sign Up</a>
         </div>
       </div>
     </div>
@@ -33,17 +36,15 @@
       <div class="nav-inner">
         <div class="nav-logo">
           <img src="logo.jpg" alt="TezNews Logo" class="nav-logo-img" />
-          <span class="nav-logo-text">TezNews</span>
+          <a href="index.html"><span class="nav-logo-text">Tez<span style="color: #ffcc00;">News</span></span></a>
         </div>
 
         <nav class="nav-links">
-          <a href="#">City</a>
           <a href="#" class="live-link">&#9679; Live</a>
           <a href="#">India</a>
           <a href="#">World</a>
           <a href="#">Business</a>
-          <a href="#">Sports</a>
-          <a href="#">Cricket</a>
+          <a href="sport.html">Sports</a>
           <a href="#">Entertainment</a>
           <a href="#">Tech</a>
           <a href="#">Life &amp; Style</a>
@@ -52,19 +53,13 @@
         </nav>
 
         <div class="nav-right">
-          <button class="icon-btn" aria-label="Search">
+          <a href="search.html"><button class="icon-btn" aria-label="Search">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
               <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
-          </button>
-          <button class="icon-btn" aria-label="Menu">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2">
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <line x1="3" y1="12" x2="21" y2="12"/>
-              <line x1="3" y1="18" x2="21" y2="18"/>
-            </svg>
-          </button>
-          <a href="#" class="epaper-btn">EPAPER</a>
+          </button></a>
+          <a href="../user/profile.html" class="epaper-btn">PROFILE</a>
+          <a href="../user/subscription.html" class="epaper-btn">SUBSCRIBE</a>
         </div>
       </div>
     </header>
@@ -100,11 +95,6 @@
 
   <!-- Spacer to push content below fixed bar -->
   <div class="navbar-spacer"></div>
-
-  <!-- ===== NEW STORIES PILL ===== -->
-  <div class="new-stories-bar">
-    <button class="new-stories-pill">15 New Stories &#x21BB;</button>
-  </div>
 
   <!-- ===== MAIN CONTENT ===== -->
   <main class="main-grid">
@@ -154,7 +144,7 @@
     <section class="col-center">
 
       <article class="hero-story">
-        <h1 class="hero-headline">'Not an era of war': EAM outlines India's stance on global conflicts, stresses zero tolerance on terror</h1>
+        <a href="article.html"><h1 class="hero-headline">'Not an era of war': EAM outlines India's stance on global conflicts, stresses zero tolerance on terror</h1></a>
         <div class="hero-img-wrap">
           <img src="https://picsum.photos/640/360?random=1" alt="EAM press conference" class="hero-img" />
           <span class="live-badge">&#9679; Live</span>
@@ -298,8 +288,6 @@
       </div>
     </section>
 
-    <div class="section-divider"></div>
-
     <!-- ENTERTAINMENT -->
     <section class="cat-section">
       <div class="cat-section-header">
@@ -349,9 +337,7 @@
           </article>
         </div>
       </div>
-    </section>
-
-    <div class="section-divider"></div>
+    </section>    
 
     <!-- WORLD -->
     <section class="cat-section">
@@ -404,8 +390,6 @@
         </div>
       </div>
     </section>
-
-    <div class="section-divider"></div>
 
     <!-- SPORTS -->
     <section class="cat-section">
@@ -533,37 +517,18 @@
     <div class="footer-inner">
       <div class="footer-logo-wrap">
         <img src="logo.jpg" alt="TezNews" class="footer-logo-img" />
-        <span class="footer-logo-text">TezNews</span>
-      </div>
-      <p class="footer-tagline">India's Fastest News — Breaking Stories, Real Time.</p>
+        <span class="footer-logo-text">Tez<span style="color: #ffcc00;">News</span></span>
+      </div><br>
       <div class="footer-links">
         <a href="#">About Us</a>
         <a href="#">Contact</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
         <a href="#">Advertise</a>
-        <a href="#">RSS Feed</a>
-      </div>
+      </div><br>
       <p class="footer-copy">&copy; 2026 TezNews. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    // Live clock
-    function updateTime() {
-      const now = new Date();
-      const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-      const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-      const dateStr = days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ', ' + now.getFullYear();
-      let h = now.getHours(), m = now.getMinutes(), ampm = h >= 12 ? 'PM' : 'AM';
-      h = h % 12 || 12;
-      const timeStr = h + ':' + (m < 10 ? '0' : '') + m + ' ' + ampm;
-      document.getElementById('info-date').textContent = dateStr;
-      document.getElementById('info-time').textContent = timeStr;
-    }
-    updateTime();
-    setInterval(updateTime, 10000);
-  </script>
 
 </body>
 </html>
