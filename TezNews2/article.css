@@ -77,7 +77,7 @@
 }
 
 .art-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: var(--text-dark);
@@ -86,7 +86,7 @@
 }
 
 .art-subheadline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 400;
   color: var(--text-mid);
@@ -239,7 +239,7 @@
    ============================== */
 
 .art-body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   color: #222;
   line-height: 1.8;
@@ -251,7 +251,7 @@
 }
 
 .art-subhead {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: var(--text-dark);
@@ -261,7 +261,7 @@
 }
 
 .art-pullquote {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: italic;
   color: var(--green-dark);
@@ -279,7 +279,7 @@
   font-weight: 700;
   color: var(--text-light);
   margin-top: 10px;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ==============================
@@ -326,7 +326,7 @@
 }
 
 .related-title {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--text-dark);
@@ -370,7 +370,7 @@
 }
 
 .related-card-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13.5px;
   font-weight: 700;
   color: var(--text-dark);
@@ -439,12 +439,12 @@
   color: #b7c5c1;
   flex-shrink: 0;
   line-height: 1;
-  font-family: Georgia, serif;
+  font-family: "Montserrat", sans-serif;
   min-width: 28px;
 }
 
 .mr-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--text-dark);
@@ -492,7 +492,7 @@
 }
 
 .sb-headline {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12.5px;
   font-weight: 700;
   color: var(--text-dark);
@@ -535,7 +535,7 @@
   border: 1px solid #ccc;
   border-radius: 3px;
   outline: none;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: border-color 0.15s;
 }
 
